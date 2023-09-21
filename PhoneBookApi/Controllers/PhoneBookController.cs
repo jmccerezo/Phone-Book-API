@@ -15,9 +15,9 @@ namespace PhoneBookApi.Controllers
         [HttpPost]
         public async Task<ActionResult<PhoneNumber>> CreatePhoneNumber(CreatePhoneNumberDto createPhoneNumberDto)
         {
-            var created = await _phoneBookService.CreatePhoneNumber(createPhoneNumberDto);
+            var createdPhoneNumber = await _phoneBookService.CreatePhoneNumber(createPhoneNumberDto);
 
-            return Ok(created);
+            return Ok(createdPhoneNumber);
         }
 
         [HttpGet]
@@ -30,7 +30,7 @@ namespace PhoneBookApi.Controllers
 
             if (phoneNumber is null) return NotFound();
 
-            return phoneNumber;
+            return Ok(phoneNumber);
         }
 
         [HttpPut("{id:length(24)}")]
@@ -40,21 +40,21 @@ namespace PhoneBookApi.Controllers
 
             if (phoneNumber is null) return NotFound();
 
-            var updated = await _phoneBookService.UpdatePhoneNumber(id, updatePhoneNumberDto);
+            var updatedPhoneNumber = await _phoneBookService.UpdatePhoneNumber(id, updatePhoneNumberDto);
 
-            return Ok(updated);
+            return Ok(updatedPhoneNumber);
         }
 
         [HttpDelete("{id:length(24)}")]
-        public async Task<ActionResult<PhoneNumber>> Delete(string id)
+        public async Task<ActionResult<PhoneNumber>> DeletePhoneNumber(string id)
         {
             var phoneNumber = await _phoneBookService.GetPhoneNumberById(id);
 
             if (phoneNumber is null) return NotFound();
 
-            var deleted = await _phoneBookService.DeletePhoneNumber(id);
+            var deletedPhoneNumber = await _phoneBookService.DeletePhoneNumber(id);
 
-            return Ok(deleted);
+            return Ok(deletedPhoneNumber);
         }
     }
 }
