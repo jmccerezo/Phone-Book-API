@@ -1,5 +1,5 @@
-using PhoneBookApi.Models;
-using PhoneBookApi.Services;
+using PhoneBookAPI.Models;
+using PhoneBookAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

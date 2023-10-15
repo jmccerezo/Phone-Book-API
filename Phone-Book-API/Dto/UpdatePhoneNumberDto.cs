@@ -1,4 +1,4 @@
-﻿namespace PhoneBookApi.Dto
+﻿namespace PhoneBookAPI.Dto
 {
     public class UpdatePhoneNumberDto
     {

@@ -1,4 +1,4 @@
-﻿namespace PhoneBookApi.Models
+﻿namespace PhoneBookAPI.Models
 {
     public class PhoneBookDatabaseSettings
     {

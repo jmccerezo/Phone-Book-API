@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PhoneBookApi.Dto;
-using PhoneBookApi.Models;
-using PhoneBookApi.Services;
+using PhoneBookAPI.Dto;
+using PhoneBookAPI.Models;
+using PhoneBookAPI.Services;
 
-namespace PhoneBookApi.Controllers
+namespace PhoneBookAPI.Controllers
 {
     [Route("phonebook")]
     [ApiController]

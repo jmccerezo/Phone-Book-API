@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "PhoneBookApi": {
+    "PhoneBookAPI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

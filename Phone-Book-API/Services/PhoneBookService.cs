@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using PhoneBookApi.Dto;
-using PhoneBookApi.Models;
+using PhoneBookAPI.Dto;
+using PhoneBookAPI.Models;
 
-namespace PhoneBookApi.Services
+namespace PhoneBookAPI.Services
 {
     public class PhoneBookService
     {
