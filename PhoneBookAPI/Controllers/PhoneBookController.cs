@@ -5,7 +5,7 @@ using PhoneBookAPI.Services;
 
 namespace PhoneBookAPI.Controllers
 {
-    [Route("phonebook")]
+    [Route("api/[controller]")]
     [ApiController]
     public class PhoneBookController : ControllerBase
     {
