@@ -9,8 +9,8 @@ namespace PhoneBookAPI.Controllers
     [ApiController]
     public class PhoneBookController : ControllerBase
     {
-        private readonly PhoneBookService _phoneBookService;
-        public PhoneBookController(PhoneBookService phoneBookService) => _phoneBookService = phoneBookService;
+        private readonly IPhoneBookService _phoneBookService;
+        public PhoneBookController(IPhoneBookService phoneBookService) => _phoneBookService = phoneBookService;
 
         [HttpPost]
         public async Task<ActionResult<PhoneNumber>> CreatePhoneNumber(CreatePhoneNumberDto createPhoneNumberDto)

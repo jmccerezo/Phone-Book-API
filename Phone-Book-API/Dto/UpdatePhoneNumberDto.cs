@@ -1,8 +1,13 @@
-﻿namespace PhoneBookAPI.Dto
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace PhoneBookAPI.Dto
 {
     public class UpdatePhoneNumberDto
     {
+        [BsonRepresentation(BsonType.String)]
         public string? Name { get; set; }
-        public int Number { get; set; }
+        [BsonRepresentation(BsonType.Int64)]
+        public Int64 Number { get; set; }
     }
 }

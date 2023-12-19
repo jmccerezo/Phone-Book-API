@@ -5,7 +5,7 @@ using PhoneBookAPI.Models;
 
 namespace PhoneBookAPI.Services
 {
-    public class PhoneBookService
+    public class PhoneBookService : IPhoneBookService
     {
         private readonly IMongoCollection<PhoneNumber> _phoneBookCollection;
 
